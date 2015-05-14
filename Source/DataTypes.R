@@ -4,6 +4,9 @@ is.factor(numbers)
 numbers <- factor(numbers)
 is.factor(numbers)
 numbers
+numbers <- as.numeric(numbers)
+is.numeric(numbers)
+numbers
 
 ints <- c(1,2,3,1,2,3)
 is.factor(ints)
@@ -22,7 +25,3 @@ is.factor(logicals)
 logicals <- factor(logicals)
 is.factor(logicals)
 logicals
-
-
-
-
