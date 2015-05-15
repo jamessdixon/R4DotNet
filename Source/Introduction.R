@@ -1,5 +1,3 @@
-
-
 x <- 10
 x
 summary(x)
