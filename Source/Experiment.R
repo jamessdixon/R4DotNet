@@ -53,3 +53,5 @@ tab
 
 model2 = lm(GPM~WT,data=fuel.efficiency)
 summary(model2)
+
+
