@@ -12,8 +12,9 @@ indexes = sample(1:nrow(flowers), size=0.6*nrow(flowers))
 flowers.train <- flowers[-indexes,]
 flowers.test <- flowers[indexes,]
 
-#fit <- kmeans(flowers.train, 5)
+fit <- kmeans(flowers.train[,1:4],5)
+fit
 
-
-
+plot(flowers.train[c("F1", "F2")], col=fit$cluster)
+points(fit$centers[,c("F1", "F2")], col=1:3, pch=8, cex=2)
 
