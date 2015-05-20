@@ -1,12 +1,10 @@
 
-setwd("C:\\Git\\R4DotNet")
-
 #y = x1 + x2 + x3 + E
 #y is what you are trying explain
 #x1, x2, x3 are the variables that cause/influence y
 #E is things that we are not measuring/ using for calculations
 
-fuel.efficiency <- read.csv("C:/Git/R4DotNet/Data/FuelEfficiency.csv")
+fuel.efficiency <- read.csv("C:/Users/DIXON/Documents/R4DotNet/R4DotNet/Data/FuelEfficiency.csv")
 summary(fuel.efficiency)
 
 #MPG = Miles per gallon
@@ -49,9 +47,7 @@ tab=cbind(out$which,out$req,out$adjr2,out$cp)
 tab
 
 #trade off between model size and model fit
-#just weight is 
+#just weight explains 85% 
 
 model2 = lm(GPM~WT,data=fuel.efficiency)
 summary(model2)
-
-

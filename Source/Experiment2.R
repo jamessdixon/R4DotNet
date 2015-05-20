@@ -17,4 +17,3 @@ fit
 
 plot(flowers.train[c("F1", "F2")], col=fit$cluster)
 points(fit$centers[,c("F1", "F2")], col=1:3, pch=8, cex=2)
-

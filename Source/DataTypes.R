@@ -4,9 +4,21 @@ is.factor(numbers)
 numbers <- factor(numbers)
 is.factor(numbers)
 numbers
+mean(numbers)
+
+#cast - lose precision
 numbers <- as.numeric(numbers)
 is.numeric(numbers)
 numbers
+
+#cast - keep precision
+numbers <- c(1.0,2.0,3.1,1.0,2.0,3.1)
+numbers <- factor(numbers)
+numbers <- as.numeric(as.character(numbers))
+is.numeric(numbers)
+numbers
+mean(numbers)
+
 
 ints <- c(1,2,3,1,2,3)
 is.factor(ints)
