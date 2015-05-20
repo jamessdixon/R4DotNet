@@ -4,7 +4,7 @@
 #x1, x2, x3 are the variables that cause/influence y
 #E is things that we are not measuring/ using for calculations
 
-fuel.efficiency <- read.csv("C:/Users/DIXON/Documents/R4DotNet/R4DotNet/Data/FuelEfficiency.csv")
+fuel.efficiency <- read.csv("C:/Git/R4DotNet/Data/FuelEfficiency.csv")
 summary(fuel.efficiency)
 
 #MPG = Miles per gallon

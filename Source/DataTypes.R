@@ -19,7 +19,6 @@ is.numeric(numbers)
 numbers
 mean(numbers)
 
-
 ints <- c(1,2,3,1,2,3)
 is.factor(ints)
 ints <- factor(ints)
