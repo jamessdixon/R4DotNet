@@ -22,6 +22,16 @@ x <- NULL
 y <- NA
 z <- x + y
 is.na(z)
+
+x<-1
+z <- x + y
+is.na(z)
+
+x <- 1
+y <- NULL
+z <- x + y
+is.null(z)
+
 v1 <- c(1,2,NULL)
 
 #str = structure (not string)
