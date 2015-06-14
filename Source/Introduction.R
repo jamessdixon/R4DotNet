@@ -18,21 +18,40 @@ v2 <- c(6,7,8)
 v3 <- v1+v2
 
 #NA and NULL
-x <- NULL
+v1 <- c(1,2,NULL)
+summary(v1)
+length(v1)
+
+v2 <- c(1,2,NA)
+summary(v2)
+length(v2)
+
+#NA addition
+x <- 1
 y <- NA
 z <- x + y
+z
+summary(z)
 is.na(z)
+str(z)
 
-x<-1
-z <- x + y
-is.na(z)
-
+#NULL addition
 x <- 1
 y <- NULL
 z <- x + y
+z
+summary(z)
+is.null(z)
+str(z)
+
+#NA and NULL, what will happen?
+x <- NA
+y <- NULL
+z <- x + y
+z
+summary(z)
+is.na(z)
 is.null(z)
 
-v1 <- c(1,2,NULL)
-
-#str = structure (not string)
-str(v3) 
+#key lesson, null and na are different
+#when you read data in, be explicit what you do with it
