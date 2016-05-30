@@ -1,6 +1,7 @@
 
 #Ints behave as you expect
 ints <- c(1,2,3,1,2,3)
+length(ints)
 mean(ints)
 is.factor(ints)
 

@@ -1,6 +1,6 @@
 
 
-fuel.efficiency <- read.csv("../Data/FuelEfficiency.csv")
+fuel.efficiency <- read.csv("FuelEfficiency.csv")
 summary(fuel.efficiency)
 
 #MPG = Miles per gallon

@@ -11,6 +11,7 @@ length(x)
 
 #Vector functions
 v1 <- c(3,4,5)
+length(v1)
 mean(v1)
 sqrt(v1)
 
@@ -19,10 +20,12 @@ v3 <- v1+v2
 
 #NA and NULL
 v1 <- c(1,2,NULL)
+length(v1)
 summary(v1)
 length(v1)
 
 v2 <- c(1,2,NA)
+length(v2)
 summary(v2)
 length(v2)
 
