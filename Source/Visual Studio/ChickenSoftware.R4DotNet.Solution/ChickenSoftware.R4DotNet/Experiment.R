@@ -14,6 +14,7 @@ summary(fuel.efficiency)
 
 plot(GPM~WT,data=fuel.efficiency)
 plot(GPM~DIS,data=fuel.efficiency)
+plot(GPM~NC, data = fuel.efficiency)
 
 fuel.efficiency$NC <- factor(fuel.efficiency$NC)
 fuel.efficiency$ET <- factor(fuel.efficiency$ET)
@@ -40,6 +41,7 @@ cor(fuel.efficiency)
 #DIS -> WT = 0.9507647
 
 #which Xs gives us most bang for the buck?
+install.packages("leaps")
 library(leaps)
 x=fuel.efficiency[,3:7]
 y=fuel.efficiency[,2]
@@ -51,6 +53,3 @@ tab
 #just weight explains 85% 
 model2 = lm(GPM~WT,data=fuel.efficiency)
 summary(model2)
-
-
-
